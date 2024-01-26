@@ -1,0 +1,21 @@
+{
+    "name": "luan/certificacao",
+    "autoload": {
+        "psr-4": {
+            "Models\\": "Api/Models",
+            "Controllers\\":"Api/Controllers",
+            "Services\\":"Api/Services",
+            "Core\\":"Core",
+            "Libs\\":"Libs"
+
+        }
+
+    },
+    "authors": [
+        {
+            "name": "l.costa",
+            "email": "luan.costa@rbmweb.com.br"
+        }
+    ],
+    "require": {}
+}
