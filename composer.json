@@ -6,7 +6,8 @@
             "Controllers\\":"Api/Controllers",
             "Services\\":"Api/Services",
             "Core\\":"Core",
-            "Libs\\":"Libs"
+            "Libs\\":"Libs",
+            "Config\\":"Config"
 
         }
 

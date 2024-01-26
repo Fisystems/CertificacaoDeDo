@@ -28,7 +28,6 @@
             $controllerName = $route['Controllers'];
             $actionName = $route['currentAction'];
             $controllerClassName = $this->prefix . ucfirst($controllerName) . "Controller";
-       
             if (class_exists($controllerClassName) && method_exists($controllerClassName, $actionName)) {
                 $controllerInstance = new $controllerClassName();
                 $controllerInstance->$actionName();
@@ -37,10 +36,10 @@
         }
 
         private function checkRouter(){
-            $test = $this->router->getRoute();
+            $arrayRouter = $this->router->getRoute();
             $endpointUrl = $this->get_endpoint_url();
             $isValidRoute = false;
-            foreach ($test as $route) {
+            foreach ($arrayRouter as $route) {
                 $regex = preg_replace_callback('/:(\w+)/', function($matches) {
                     return "(?P<{$matches[1]}>[\w-]+)";
                 }, $route['path']);
@@ -48,7 +47,6 @@
                 if ($_SERVER['REQUEST_METHOD'] === $route['method'] && preg_match($regex, $endpointUrl, $matches)) {
                     $isValidRoute = true;                
                     array_shift($matches);
-                    var_dump($matches);
                     break;
                 }
             }

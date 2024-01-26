@@ -11,10 +11,6 @@ class ComposerStaticInit33cad13092641f81b77ea1ff6e1ca5db
         array (
             'Services\\' => 9,
         ),
-        'P' => 
-        array (
-            'PHPMailer\\PHPMailer\\' => 20,
-        ),
         'M' => 
         array (
             'Models\\' => 7,
@@ -27,6 +23,7 @@ class ComposerStaticInit33cad13092641f81b77ea1ff6e1ca5db
         array (
             'Core\\' => 5,
             'Controllers\\' => 12,
+            'Config\\' => 7,
         ),
     );
 
@@ -34,10 +31,6 @@ class ComposerStaticInit33cad13092641f81b77ea1ff6e1ca5db
         'Services\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Api/Services',
-        ),
-        'PHPMailer\\PHPMailer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Models\\' => 
         array (
@@ -54,6 +47,10 @@ class ComposerStaticInit33cad13092641f81b77ea1ff6e1ca5db
         'Controllers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Api/Controllers',
+        ),
+        'Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Config',
         ),
     );
 

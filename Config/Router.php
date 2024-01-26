@@ -1,7 +1,9 @@
 <?php
 use Core\Router;
 $router = new Router();
-$router->addRoute('POST',   '/documents',                  "Documents", "Index"); // Criar um novo documento
+$router->addRoute('POST',   '/documents/hash',             "Documents", "hash"); // Criar um novo Hash
+
+
 $router->addRoute('GET',    '/documents/:id',              "Documents", "exibir"); // Obter informações de um documento específico
 $router->addRoute('PUT',    '/documents/:id',              "Documents", "Index"); // Atualizar um documento existente
 $router->addRoute('DELETE', '/documents/:id',              "Documents", "Index"); // Excluir um documento

@@ -11,4 +11,5 @@ return array(
     'Libs\\' => array($baseDir . '/Libs'),
     'Core\\' => array($baseDir . '/Core'),
     'Controllers\\' => array($baseDir . '/Api/Controllers'),
+    'Config\\' => array($baseDir . '/Config'),
 );

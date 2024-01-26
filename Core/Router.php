@@ -3,7 +3,6 @@ namespace Core;
 
 class Router {
     public static $routes = [];
-    private static $routeList = [];
 
     public function addRoute($method, $path, $controllers, $currentAction) {
         self::$routes[] = [
@@ -12,18 +11,9 @@ class Router {
             'Controllers' => $controllers,
             'currentAction' => $currentAction,
         ];
-
-        self::$routeList[] = [
-            'method' => $method,
-            'path' => $path,
-        ];
     }
      
-    public function getRouteList() {
-        return self::$routeList;
-    }
-
     public function getRoute() {
         return self::$routes;
-    }
+    }   
 }
